@@ -30,8 +30,12 @@ For developers new to TensorFlow, the high-level API is a good place to start. T
 
 * [tf.contrib.learn Quickstart](https://www.tensorflow.org/get_started/tflearn)
   , which introduces this API.
+  tftf.contrib.learn快速开始，介绍API
+
 * [Building Input Functions with tf.contrib.learn](https://www.tensorflow.org/get_started/input_fn)
   , which takes you into a somewhat more sophisticated use of this API.
+  用tf.conotrib.learn实现输入功能，教你更加熟练的使用API
+
 * [Logging and Monitoring Basics with tf.contrib.learn](https://www.tensorflow.org/get_started/monitors)
   , which explains how to audit the progress of model training.
 
