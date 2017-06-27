@@ -25,7 +25,8 @@ MNIST已经成为测试新的机器学习工具的规范化数据集，我们提
   , which introduces MNIST through the low-level API.  
   TensorFlow结构101，通过底层API实现MNIST
 
-For developers new to TensorFlow, the high-level API is a good place to start. To learn about the high-level API, read the following guides:
+For developers new to TensorFlow, the high-level API is a good place to start. To learn about the high-level API, read the following guides:  
+对于第一次接触TensorFlow的开发者，高层API是一个好的入手点。要学习高层API，请阅读下面的指南：
 
 * [tf.contrib.learn Quickstart](https://www.tensorflow.org/get_started/tflearn)
   , which introduces this API.
