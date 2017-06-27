@@ -38,7 +38,7 @@ For developers new to TensorFlow, the high-level API is a good place to start. T
 
 * [Logging and Monitoring Basics with tf.contrib.learn](https://www.tensorflow.org/get_started/monitors)  
   , which explains how to audit the progress of model training.  
-  tf.contrib.learn的日志和监视基础
+  tf.contrib.learn的日志和监视基础，介绍了如何监听模型训练的过程
 
 TensorBoard is a utility to visualize different aspects of machine learning. The following guides explain how to use TensorBoard:
 
