@@ -15,8 +15,12 @@ MNIST已经成为测试新的机器学习工具的规范化数据集，我们提
 
 * [MNIST for ML Beginners](https://www.tensorflow.org/get_started/mnist/beginners)
   , which introduces MNIST through the high-level API.
+  ，MNIST机器学习初学者，通过高级API实现MNIST
+
 * [Deep MNIST for Experts](https://www.tensorflow.org/get_started/mnist/pros)
   , which is more-in depth than "MNIST for ML Beginners," and assumes some familiarity with machine learning concepts.
+  ，比MNIST机器学习更深入的MNIST
+
 * [TensorFlow Mechanics 101](https://www.tensorflow.org/get_started/mnist/mechanics)
   , which introduces MNIST through the low-level API.
 
