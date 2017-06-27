@@ -41,7 +41,7 @@ For developers new to TensorFlow, the high-level API is a good place to start. T
   tf.contrib.learn的日志和监视基础，介绍了如何监听模型训练的过程
 
 TensorBoard is a utility to visualize different aspects of machine learning. The following guides explain how to use TensorBoard:  
-TensorBoard是一个可视化机器学习各方面的工具
+TensorBoard是一个可视化机器学习各方面的工具。以下是如何使用TensorBoard的教程。
 
 * [TensorBoard: Visualizing Learning](https://www.tensorflow.org/get_started/summaries_and_tensorboard)
   , which gets you started.
