@@ -28,16 +28,17 @@ MNIST已经成为测试新的机器学习工具的规范化数据集，我们提
 For developers new to TensorFlow, the high-level API is a good place to start. To learn about the high-level API, read the following guides:  
 对于第一次接触TensorFlow的开发者，高层API是一个好的入手点。要学习高层API，请阅读下面的指南：
 
-* [tf.contrib.learn Quickstart](https://www.tensorflow.org/get_started/tflearn)
-  , which introduces this API.
+* [tf.contrib.learn Quickstart](https://www.tensorflow.org/get_started/tflearn)  
+  , which introduces this API.  
   tftf.contrib.learn快速开始，介绍API
 
-* [Building Input Functions with tf.contrib.learn](https://www.tensorflow.org/get_started/input_fn)
-  , which takes you into a somewhat more sophisticated use of this API.
+* [Building Input Functions with tf.contrib.learn](https://www.tensorflow.org/get_started/input_fn)  
+  , which takes you into a somewhat more sophisticated use of this API.  
   用tf.conotrib.learn实现输入功能，教你更加熟练的使用API
 
-* [Logging and Monitoring Basics with tf.contrib.learn](https://www.tensorflow.org/get_started/monitors)
-  , which explains how to audit the progress of model training.
+* [Logging and Monitoring Basics with tf.contrib.learn](https://www.tensorflow.org/get_started/monitors)  
+  , which explains how to audit the progress of model training.  
+  tf.contrib.learn的日志和监视基础
 
 TensorBoard is a utility to visualize different aspects of machine learning. The following guides explain how to use TensorBoard:
 
