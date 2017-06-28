@@ -1,6 +1,4 @@
-# Getting Started
-
-# 入门指南
+# Getting Started 入门指南
 
 For a brief overview of TensorFlow programming fundamentals, see the following guide:
 

@@ -1,35 +1,33 @@
-# Getting Started With TensorFlow
-
-# TensorFlow入门
+# Getting Started With TensorFlow（TensorFlow入门）
 
 This guide gets you started programming in TensorFlow. Before using this guide,[install TensorFlow](https://www.tensorflow.org/install/index). To get the most out of this guide, you should know the following:
 
 本教程指导你如何用TensorFlow开始编程。在开始前，请先安装TensorFlow。为了更好的使用本教程，你还应该知道下面的知识：
 
 * How to program in Python.
-* 如何使用Python编程
+  如何使用Python编程
 * At least a little bit about arrays.
-* 了解一些数组知识
+
+  了解一些数组知识
 * Ideally, something about machine learning. However, if you know little or nothing about machine learning, then this is still the first guide you should read.
-* 如果还知道一些机器学习的知识就更好了。当然，如果你从未了解机器学习，本教程也是你应该阅读的第一个教程。
+
+  如果还知道一些机器学习的知识就更好了。当然，如果你从未了解机器学习，本教程也是你应该阅读的第一个教程。
 
 TensorFlow provides multiple APIs. The lowest level API--TensorFlow Core-- provides you with complete programming control. We recommend TensorFlow Core for machine learning researchers and others who require fine levels of control over their models. The higher level APIs are built on top of TensorFlow Core. These higher level APIs are typically easier to learn and use than TensorFlow Core. In addition, the higher level APIs make repetitive tasks easier and more consistent between different users. A high-level API like tf.contrib.learn helps you manage data sets, estimators, training and inference. Note that a few of the high-level TensorFlow APIs--those whose method names contain`contrib`-- are still in development. It is possible that some`contrib`methods will change or become obsolete in subsequent TensorFlow releases.
 
-TensorFlow提供了多种API接口。最底层的API--TensorFlow Core-- 提供了完整的编程控制。我们推荐机器学习的研究人员和那些需要更好地控制他们的模型的人使用TensorFlow Core。有些更高级别的API比TensorFlow Core更容易学习和使用，而且，这些更高级别的API使不同的用户间的重复任务更容易实现及保持一致性。一个高层API如tf.contrib.learn将帮助你管理数据集，估算，训练和推论。值得注意的有少数几个高层TensorFlow API的名字包含了contrib --表示还在开发中。有可能这些contrib方法会在以后的TensorFlow版本中被修改或废除。
+TensorFlow提供了多种API接口。最底层的API--TensorFlow Core-- 提供了完整的编程控制。我们推荐机器学习的研究人员和那些需要更好地控制他们的模型的人使用TensorFlow Core。有些更高级别的API比TensorFlow Core更容易学习和使用，而且，这些更高级别的API使不同的用户间的重复任务更容易实现及保持一致性。一个高层API如tf.contrib.learn将帮助你管理数据集，估算，训练和推论。值得注意的是有少数几个高层TensorFlow API的名字包含了contrib --表示还在开发中。有可能这些contrib方法会在以后的TensorFlow版本中被修改或废除。
 
 This guide begins with a tutorial on TensorFlow Core. Later, we demonstrate how to implement the same model in tf.contrib.learn. Knowing TensorFlow Core principles will give you a great mental model of how things are working internally when you use the more compact higher level API.
 
 本教程从TensorFlow Core的入门指导开始，然后我们将演示如何用tf.contrib.learn去实现同样的模型。知道了TensorFlow Core的原理将会在你脑子里建立一个模型，这个模型会帮助你理解当你使用封装更好的高层API时，它们是如何工作的。
 
-# Tensors {#tensors}
-
-# 张量 {#tensors}
+# Tensors {#tensors}（张量 ）
 
 The central unit of data in TensorFlow is the **tensor**. A tensor consists of a set of primitive values shaped into an array of any number of dimensions. A tensor's **rank **is its number of dimensions. Here are some examples of tensors:
 
 TensorFlow的核心数据是张量。张量是用形状为任意维度数组表示的一组基本数据。张量的阶就是形状的维度。下面是一些张量的例子：
 
-```
+```Python
 3 # a rank 0 tensor; this is a scalar with shape []
 3 # 0阶张量，一个标量，形状为[]
 
@@ -43,19 +41,15 @@ TensorFlow的核心数据是张量。张量是用形状为任意维度数组表�
 [[[1., 2., 3.]], [[7., 8., 9.]]] # 一个3阶张量，形状为[2, 1, 3]
 ```
 
-## TensorFlow Core tutorial {#tensorflow_core_tutorial}
+## TensorFlow Core tutorial {#tensorflow_core_tutorial}(TensorFlow Core教程 )
 
-## TensorFlow Core教程 {#tensorflow_core_tutorial}
-
-### Importing TensorFlow {#importing_tensorflow}
-
-### 引入TensorFlow {#importing_tensorflow}
+### Importing TensorFlow {#importing_tensorflow}(引入TensorFlow )
 
 The canonical import statement for TensorFlow programs is as follows:
 
 典型的引入TensorFlow的语句是：
 
-```py
+```python
 import tensorflow as tf
 ```
 
@@ -63,19 +57,18 @@ This gives Python access to all of TensorFlow's classes, methods, and symbols. M
 
 以上语句让Python能访问所有TensorFlow类，方法和符号。所有的文档都假设你已经做了这一步。
 
-### The Computational Graph {#the_computational_graph}
-
-### 计算图 {#the_computational_graph}
+### The Computational Graph {#the_computational_graph}(计算图 )
 
 You might think of TensorFlow Core programs as consisting of two discrete sections:  
 你可以认为TensorFlow Core程序由两个独立部分组成：
 
 1. Building the computational graph.
-2. Running the computational graph.
 
-3. 建立计算图.
+   建立计算图
 
-4. 运行计算图.
+1. Running the computational graph.
+
+   运行计算图.
 
 A **computational graph **is a series of TensorFlow operations arranged into a graph of nodes. Let's build a simple computational graph. Each node takes zero or more tensors as inputs and produces a tensor as an output. One type of node is a constant. Like all TensorFlow constants, it takes no inputs, and it outputs a value it stores internally. We can create two floating point Tensors`node1`and`node2`as follows:
 
