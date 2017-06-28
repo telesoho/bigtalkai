@@ -27,20 +27,20 @@ This guide begins with a tutorial on TensorFlow Core. Later, we demonstrate how 
 
 The central unit of data in TensorFlow is the **tensor**. A tensor consists of a set of primitive values shaped into an array of any number of dimensions. A tensor's **rank **is its number of dimensions. Here are some examples of tensors:
 
-TensorFlow的核心数据是张量。张量是一组基本数据按一定的形状组成的任意维度数组。张量的阶就是它的维度。下面是一些张量的例子：
+TensorFlow的核心数据是张量。张量是一组基本数据按一定的形状压成任意维度数组。张量的阶就是它的维度。下面是一些张量的例子：
 
 ```
 3 # a rank 0 tensor; this is a scalar with shape []
 3 # 0阶张量，形状为[]的一个标量
 
 [1. ,2., 3.] # a rank 1 tensor; this is a vector with shape [3]
-[1. ,2., 3.] # 1阶张量，形为[3]的一个矢量
+[1. ,2., 3.] # 1阶张量，形状为[3]的一个矢量
 
 [[1., 2., 3.], [4., 5., 6.]] # a rank 2 tensor; a matrix with shape [2, 3]
-[[1., 2., 3.], [4., 5., 6.]] # 2阶张量；形为[2, 3]的一个矩阵
+[[1., 2., 3.], [4., 5., 6.]] # 2阶张量；形状为[2, 3]的一个矩阵
 
 [[[1., 2., 3.]], [[7., 8., 9.]]] # a rank 3 tensor with shape [2, 1, 3]
-[[[1., 2., 3.]], [[7., 8., 9.]]] # 形为[2, 1, 3]的一个3阶张量
+[[[1., 2., 3.]], [[7., 8., 9.]]] # 形状为[2, 1, 3]的一个3阶张量
 ```
 
 ## TensorFlow Core tutorial {#tensorflow_core_tutorial}
