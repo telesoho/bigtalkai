@@ -61,5 +61,5 @@ import tensorflow as tf
 
 This gives Python access to all of TensorFlow's classes, methods, and symbols. Most of the documentation assumes you have already done this.
 
-
+以上语句让Python能访问所有TensorFlow类，方法和符号。所有的文档都假设你已经做了这一步。
 
