@@ -15,9 +15,9 @@ This guide gets you started programming in TensorFlow. Before using this guide,[
 
 TensorFlow provides multiple APIs. The lowest level API--TensorFlow Core-- provides you with complete programming control. We recommend TensorFlow Core for machine learning researchers and others who require fine levels of control over their models. The higher level APIs are built on top of TensorFlow Core. These higher level APIs are typically easier to learn and use than TensorFlow Core. In addition, the higher level APIs make repetitive tasks easier and more consistent between different users. A high-level API like tf.contrib.learn helps you manage data sets, estimators, training and inference. Note that a few of the high-level TensorFlow APIs--those whose method names contain`contrib`-- are still in development. It is possible that some`contrib`methods will change or become obsolete in subsequent TensorFlow releases.
 
-TensorFlow提供了多种API接口。最底层的API--TensorFlow Core-- 提供了完整的编程控制。我们推荐机器学习的研究人员和那些需要更好地控制他们的模型的人使用TensorFlow Core。有些更高级别的API比TensorFlow Core更容易学习和使用，而且，这些更高级别的API使不同的用户间的重复任务更容易和保存一致性。一个高层API如tf.contrib.learn将帮助你管理数据集，估算，训练和推论。
+TensorFlow提供了多种API接口。最底层的API--TensorFlow Core-- 提供了完整的编程控制。我们推荐机器学习的研究人员和那些需要更好地控制他们的模型的人使用TensorFlow Core。有些更高级别的API比TensorFlow Core更容易学习和使用，而且，这些更高级别的API使不同的用户间的重复任务更容易和保存一致性。一个高层API如tf.contrib.learn将帮助你管理数据集，估算，训练和推论。值得注意的有少数几个高层TensorFlow API的名字包含了contrib --表示还在开发中。有可能这些contrib方法会在以后的TensorFlow版本中被修改或废除。
 
-This guide begins with a tutorial on TensorFlow Core. Later, we demonstrate how to implement the same model in tf.contrib.learn. Knowing TensorFlow Core principles will give you a great mental model of how things are working internally when you use the more compact higher level API.
+This。 guide begins with a tutorial on TensorFlow Core. Later, we demonstrate how to implement the same model in tf.contrib.learn. Knowing TensorFlow Core principles will give you a great mental model of how things are working internally when you use the more compact higher level API.
 
 # Tensors {#tensors}
 
