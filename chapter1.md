@@ -79,5 +79,5 @@ You might think of TensorFlow Core programs as consisting of two discrete sectio
 
 A **computational graph **is a series of TensorFlow operations arranged into a graph of nodes. Let's build a simple computational graph. Each node takes zero or more tensors as inputs and produces a tensor as an output. One type of node is a constant. Like all TensorFlow constants, it takes no inputs, and it outputs a value it stores internally. We can create two floating point Tensors`node1`and`node2`as follows:
 
-
+一个计算图是一系列TensorFlow操作排列为一个节点图。
 
