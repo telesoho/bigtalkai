@@ -19,7 +19,7 @@ TensorFlow提供了多种API接口。最底层的API--TensorFlow Core-- 提供�
 
 This guide begins with a tutorial on TensorFlow Core. Later, we demonstrate how to implement the same model in tf.contrib.learn. Knowing TensorFlow Core principles will give you a great mental model of how things are working internally when you use the more compact higher level API.
 
-本教程从TensorFlow Core的入门指导开始，
+本教程从TensorFlow Core的入门指导开始，然后我们将演示如何用tf.contrib.learn去实现同样的模型。
 
 # Tensors {#tensors}
 
