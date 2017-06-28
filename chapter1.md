@@ -43,6 +43,8 @@ TensorFlow的核心数据是张量。张量是按一定的形状压成任意维�
 [[[1., 2., 3.]], [[7., 8., 9.]]] # 形状为[2, 1, 3]的一个3阶张量
 ```
 
+
+
 ## TensorFlow Core tutorial {#tensorflow_core_tutorial}
 
 ### Importing TensorFlow {#importing_tensorflow}
