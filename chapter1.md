@@ -17,11 +17,13 @@ TensorFlow provides multiple APIs. The lowest level API--TensorFlow Core-- provi
 
 TensorFlow提供了多种API接口。最底层的API--TensorFlow Core-- 提供了完整的编程控制。我们推荐机器学习的研究人员和那些需要更好地控制他们的模型的人使用TensorFlow Core。有些更高级别的API比TensorFlow Core更容易学习和使用，而且，这些更高级别的API使不同的用户间的重复任务更容易实现及保持一致性。一个高层API如tf.contrib.learn将帮助你管理数据集，估算，训练和推论。值得注意的有少数几个高层TensorFlow API的名字包含了contrib --表示还在开发中。有可能这些contrib方法会在以后的TensorFlow版本中被修改或废除。
 
-This。 guide begins with a tutorial on TensorFlow Core. Later, we demonstrate how to implement the same model in tf.contrib.learn. Knowing TensorFlow Core principles will give you a great mental model of how things are working internally when you use the more compact higher level API.
+This guide begins with a tutorial on TensorFlow Core. Later, we demonstrate how to implement the same model in tf.contrib.learn. Knowing TensorFlow Core principles will give you a great mental model of how things are working internally when you use the more compact higher level API.
+
+本教程从TensorFlow Core的入门指导开始，
 
 # Tensors {#tensors}
 
-The central unit of data in TensorFlow is the**tensor**. A tensor consists of a set of primitive values shaped into an array of any number of dimensions. A tensor's**rank**is its number of dimensions. Here are some examples of tensors:
+The central unit 。of data in TensorFlow is the**tensor**. A tensor consists of a set of primitive values shaped into an array of any number of dimensions. A tensor's**rank**is its number of dimensions. Here are some examples of tensors:
 
 ```
 3 # a rank 0 tensor; this is a scalar with shape []
