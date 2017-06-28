@@ -43,11 +43,16 @@ TensorFlow的核心数据是张量。张量是用形状为任意维度数组表�
 [[[1., 2., 3.]], [[7., 8., 9.]]] # 一个3阶张量，形状为[2, 1, 3]
 ```
 
-## TensorFlow Core tutorial {#tensorflow_core_tutorial}
+## TensorFlow Core tutorial  {#tensorflow_core_tutorial}
 
-### Importing TensorFlow {#importing_tensorflow}
+## TensorFlow Core教程 {#tensorflow_core_tutorial}
 
-The canonical import statement for TensorFlow programs is as follows:
+### Importing TensorFlow  {#importing_tensorflow}
+
+### 引入TensorFlow {#importing_tensorflow}
+
+The canonical import statement for TensorFlow programs is as follows:  
+
 
 ```
 import
