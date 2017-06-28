@@ -53,9 +53,9 @@ TensorFlow的核心数据是张量。张量是用形状为任意维度数组表�
 
 The canonical import statement for TensorFlow programs is as follows:
 
+典型的引入TensorFlow的语句是：
 
-
-```
+```py
 import tensorflow as tf
 ```
 
