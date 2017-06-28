@@ -63,3 +63,20 @@ This gives Python access to all of TensorFlow's classes, methods, and symbols. M
 
 以上语句让Python能访问所有TensorFlow类，方法和符号。所有的文档都假设你已经做了这一步。
 
+### The Computational Graph {#the_computational_graph}
+
+### 计算图 {#the_computational_graph}
+
+You might think of TensorFlow Core programs as consisting of two discrete sections:  
+你可以认为TensorFlow Core程序由两个独立部分组成：
+
+1. Building the computational graph.
+2. Running the computational graph.
+
+1. 建立计算图.
+2. 运行计算图.
+
+
+
+A**computational graph**is a series of TensorFlow operations arranged into a graph of nodes. Let's build a simple computational graph. Each node takes zero or more tensors as inputs and produces a tensor as an output. One type of node is a constant. Like all TensorFlow constants, it takes no inputs, and it outputs a value it stores internally. We can create two floating point Tensors`node1`and`node2`as follows:
+
